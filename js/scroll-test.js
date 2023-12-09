@@ -1,22 +1,16 @@
-window.smoothScrollDisabled = true;
-
 document.addEventListener("DOMContentLoaded", function () {
-  const targetSection = document.getElementById("footer-test2");
+    const targetSection = document.getElementById("footer-test2");
 
-  if (!window.smoothScrollDisabled) {
+    document.body.style.scrollBehavior = "smooth";
+    document.body.style.scrollSnapType = "mandatory";
+    document.body.style.scrollSnapPointsY = "repeat(100%)";
+
     setTimeout(function () {
-      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      targetSection.scrollIntoView({
+        block: "start",
+        inline: "nearest",
+        behavior: "smooth",
+        duration: 2000,
+      });
     }, 1000);
-  }
-});
-
-// document.addEventListener('DOMContentLoaded', function() {
-
-//     const targetSection = document.getElementById('footer-test2');
-
-
-//     setTimeout(function() {
-      
-//         targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//     }, 1000);
-// });
+  });
