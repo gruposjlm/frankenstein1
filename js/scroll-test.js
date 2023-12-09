@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const targetSection = document.getElementById("scroll-to-test");
+    const targetSection = document.getElementById("geradorbotao");
 
     document.body.style.scrollBehavior = "smooth";
     document.body.style.scrollSnapType = "mandatory";
