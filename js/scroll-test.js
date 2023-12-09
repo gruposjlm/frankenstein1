@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const targetSection = document.getElementById("footer-test2");
+    const targetSection = document.getElementById("scroll-to-test");
 
     document.body.style.scrollBehavior = "smooth";
     document.body.style.scrollSnapType = "mandatory";
