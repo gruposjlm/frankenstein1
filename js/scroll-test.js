@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.scrollSnapPointsY = "repeat(100%)";
   
     setTimeout(function () {
-      const offset = 5;
+      const offset = 10;
       const targetPosition =
         targetSection.getBoundingClientRect().top + window.pageYOffset - offset;
   
